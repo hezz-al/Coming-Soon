@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coming Soon", "Coming Soon\Coming Soon.csproj", "{14EDDAF9-B7DF-413D-A1E8-8489AE78DE45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coming Soon", "Coming Soon\Coming Soon.csproj", "{14EDDAF9-B7DF-413D-A1E8-8489AE78DE45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main Site", "Main Site\Main Site.csproj", "{A2518D9B-75B1-4979-BD5F-CCCC766DF50B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{14EDDAF9-B7DF-413D-A1E8-8489AE78DE45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14EDDAF9-B7DF-413D-A1E8-8489AE78DE45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14EDDAF9-B7DF-413D-A1E8-8489AE78DE45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2518D9B-75B1-4979-BD5F-CCCC766DF50B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2518D9B-75B1-4979-BD5F-CCCC766DF50B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2518D9B-75B1-4979-BD5F-CCCC766DF50B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2518D9B-75B1-4979-BD5F-CCCC766DF50B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
