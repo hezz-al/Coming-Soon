@@ -15,7 +15,8 @@ namespace MainSite.AppCode.Repositories
             : base(db) { }
         public Setting Add(Setting entity)
         {
-            throw new NotImplementedException();
+            db.Settings.Add(entity);
+            return entity;
         }
 
         public void Delete(Setting entity)
