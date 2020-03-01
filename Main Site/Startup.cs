@@ -1,4 +1,5 @@
-﻿using MainSite.Models.DataContext;
+﻿using MainSite.AppCode.Repositories;
+using MainSite.Models.DataContext;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -30,8 +31,14 @@ namespace Main_Site
 
             services.AddDbContext<HEZZALDBContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("cString")));
+            RepositoryDIImplementation(services);
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+        }
+
+        private void RepositoryDIImplementation(IServiceCollection services)
+        {
+            services.AddScoped<SettingRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
