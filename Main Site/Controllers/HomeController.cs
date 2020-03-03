@@ -1,15 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Main_Site.Models;
+using MainSite.AppCode.Infrastructure;
+using MainSite.Models.Entity;
 using Microsoft.AspNetCore.Mvc;
-using Main_Site.Models;
+using System.Diagnostics;
 
 namespace Main_Site.Controllers
 {
     public class HomeController : Controller
     {
+        readonly IRepository<Setting> settingRepo;
+        public HomeController(IRepository<Setting> settingRepo)
+        {
+            this.settingRepo = settingRepo;
+        }
         public IActionResult Index()
         {
             return View();

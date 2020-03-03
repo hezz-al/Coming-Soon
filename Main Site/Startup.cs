@@ -1,5 +1,7 @@
-﻿using MainSite.AppCode.Repositories;
+﻿using MainSite.AppCode.Infrastructure;
+using MainSite.AppCode.Repositories;
 using MainSite.Models.DataContext;
+using MainSite.Models.Entity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -38,7 +40,7 @@ namespace Main_Site
 
         private void RepositoryDIImplementation(IServiceCollection services)
         {
-            services.AddScoped<SettingRepository>();
+            services.AddScoped<IRepository<Setting>, SettingRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
