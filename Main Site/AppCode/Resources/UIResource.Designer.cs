@@ -61,11 +61,110 @@ namespace MainSite.AppCode.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Playlistə əlavə et.
+        /// </summary>
+        public static string AddToPlaylist {
+            get {
+                return ResourceManager.GetString("AddToPlaylist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reklam ver.
+        /// </summary>
+        public static string Advertise {
+            get {
+                return ResourceManager.GetString("Advertise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sil.
+        /// </summary>
+        public static string Delete {
+            get {
+                return ResourceManager.GetString("Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Seçilən.
+        /// </summary>
+        public static string Favourite {
+            get {
+                return ResourceManager.GetString("Favourite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Şifrəni unutmusan.
+        /// </summary>
+        public static string ForgotPassword {
+            get {
+                return ResourceManager.GetString("ForgotPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Janrlar.
         /// </summary>
         public static string Genres {
             get {
                 return ResourceManager.GetString("Genres", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Daxil ol.
+        /// </summary>
+        public static string Login {
+            get {
+                return ResourceManager.GetString("Login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Problemi bildir.
+        /// </summary>
+        public static string ReportAnIssue {
+            get {
+                return ResourceManager.GetString("ReportAnIssue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paylaş.
+        /// </summary>
+        public static string Share {
+            get {
+                return ResourceManager.GetString("Share", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Qeydiyyat.
+        /// </summary>
+        public static string SignIn {
+            get {
+                return ResourceManager.GetString("SignIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Abunə ol.
+        /// </summary>
+        public static string Subscribe {
+            get {
+                return ResourceManager.GetString("Subscribe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Faydalı linklər.
+        /// </summary>
+        public static string UsefullLinks {
+            get {
+                return ResourceManager.GetString("UsefullLinks", resourceCulture);
             }
         }
     }

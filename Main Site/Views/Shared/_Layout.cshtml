@@ -248,7 +248,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-3 col-md-6 col-12 col-sm-12">
+                    <div class="col-lg-4 col-md-6 col-12 col-sm-12">
                         <div class="footer_widget footer_about_wrapper m24_cover">
                             <div class="wrapper_first_image">
                                 <a asp-controller="home" asp-action="index"><img src="~/images/logo.png" class="img-responsive" alt="logo" /></a>
@@ -263,33 +263,29 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 col-sm-12">
+                    <div class="col-lg-4 col-md-6 col-12 col-sm-12">
                         <div class="footer_widget footer_blog_wrapper m24_cover">
-                            <h4>usefull links</h4>
+                            <h4>@UIResource.UsefullLinks</h4>
                             <ul class="footer_about_link_wrapper usefull_linkx m24_cover">
                                 <li>
-                                    <a href="#">Feedback</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Report an issue</a>
+                                    <a asp-controller="contacts" asp-action="create">@UIResource.ReportAnIssue</a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a asp-controller="contacts" asp-action="faq">
                                         FAQ
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        advertise
+                                    <a asp-controller="contacts" asp-action="ads">
+                                        @UIResource.Advertise
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 col-sm-12">
+                    <div class="col-lg-4 col-md-6 col-12 col-sm-12">
                         <div class="footer_widget footer_contact_wrapper m24_cover">
-                            <h4>newsletter</h4>
+                            <h4>@UIResource.Subscribe</h4>
                             <p>Our latest news & Special Offers </p>
                             <div class="contect_form_footer m24_cover">
                                 <input type="text" name="name" placeholder="name">
@@ -300,7 +296,7 @@
                             <div class="lang_apply_btn footer_cont_btn">
                                 <ul>
                                     <li>
-                                        <a href="#"> <i class="flaticon-play-button"></i>subscribe</a>
+                                        <a href="#"> <i class="flaticon-play-button"></i>@UIResource.Subscribe</a>
                                     </li>
                                 </ul>
 
@@ -314,29 +310,24 @@
         <div class="foter_top_wrapper m24_cover">
             <div class="container">
                 <ul>
-                    <li>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li> <a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
-
-                    <li>
-                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-tumblr"></i></a>
-                    </li>
-                    <li> <a href="#"><i class="fab fa-behance"></i></a> </li>
-                    <li> <a href="#"><i class="fab fa-dribbble"></i></a> </li>
-                    <li> <a href="#"><i class="fab fa-whatsapp"></i></a> </li>
+                    @if (!string.IsNullOrWhiteSpace(setting.Facebook))
+                    {
+                        <li>
+                            <a href="http://fb.com/@setting.Facebook"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(setting.Twitter))
+                    {
+                        <li>
+                            <a href="http://fb.com/@setting.Twitter"><i class="fab fa-twitter"></i></a>
+                        </li>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(setting.Instagram))
+                    {
+                        <li>
+                            <a href="http://fb.com/@setting.Instagram"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    }
                 </ul>
             </div>
         </div>
@@ -346,11 +337,7 @@
 
                     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                         <div class="btm_foter_box">
-
-                            <p>Copyright © 2019 <a href="index.html"> Tunein </a> Template designed by <a href="#"> Webstrot.</a></p>
-                            <div class="aboutus_social_icons">
-                                <a href="#">Get Tunein <i class="flaticon-play-button"></i></a>
-                            </div>
+                            <p>Copyright © 2020</p>
                         </div>
                     </div>
                 </div>
@@ -358,118 +345,6 @@
         </div>
 
         <!--footer wrapper end-->
-        <!-- language modal section -->
-    </div>
-    <div class="modal fade lang_m24_banner" id="myModal" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-
-                        <div class="m24_language_box m24_cover">
-                            <h1>Language Selection</h1>
-                            <p>Please select the language(s) of the music you listen to.</p>
-                        </div>
-                        <div class="lang_list_checkbox">
-                            <ul>
-                                <li>
-                                    <p class="music_field_box">
-                                        <input type="checkbox" id="c1" name="cb">
-                                        <label for="c1">
-                                            हिंदी <span>Hindi</span>
-                                        </label>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="music_field_box">
-                                        <input type="checkbox" id="c2" name="cb">
-                                        <label for="c2">
-                                            English <span>English</span>
-                                        </label>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="music_field_box">
-                                        <input type="checkbox" id="c3" name="cb">
-                                        <label for="c3">
-                                            पंजाबी <span>Punjabi</span>
-                                        </label>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="music_field_box">
-                                        <input type="checkbox" id="c4" name="cb">
-                                        <label for="c4">
-                                            தமிழ் <span>tamil</span>
-                                        </label>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="music_field_box">
-                                        <input type="checkbox" id="c5" name="cb">
-                                        <label for="c5">
-                                            राजस्थानी <span>Rajasthani</span>
-                                        </label>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="music_field_box">
-                                        <input type="checkbox" id="c6" name="cb">
-                                        <label for="c6">
-                                            हरयाणवी <span>Haryanvi</span>
-                                        </label>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="music_field_box">
-                                        <input type="checkbox" id="c7" name="cb">
-                                        <label for="c7">
-                                            ગુજરાતી <span>Gujarati</span>
-                                        </label>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="music_field_box">
-                                        <input type="checkbox" id="c8" name="cb">
-                                        <label for="c8">
-                                            भोजपुरी <span>Bhojpuri</span>
-                                        </label>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="music_field_box">
-                                        <input type="checkbox" id="c9" name="cb">
-                                        <label for="c9">
-                                            മലയാളം <span>Malayalam</span>
-                                        </label>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="music_field_box">
-                                        <input type="checkbox" id="c10" name="cb">
-                                        <label for="c10">
-                                            मराठी <span>marathi</span>
-                                        </label>
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="lang_apply_btn_wrapper m24_cover">
-                            <div class="lang_apply_btn">
-
-                                <a href="#">apply</a>
-
-                            </div>
-                            <div class="cancel_wrapper">
-                                <a href="#" class="" data-dismiss="modal">cancel</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- login register  modal section -->
     <div class="modal fade lang_m24_banner" id="login_modal" role="dialog">
@@ -480,7 +355,7 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-12">
 
                         <div class="m24_language_box m24_cover">
-                            <h1>Login / Sign In</h1>
+                            <h1>@UIResource.Login / @UIResource.SignIn</h1>
                             <p>for unlimited music streaming & a personalised experience</p>
                         </div>
                         <div class="login_form_wrapper">
@@ -502,7 +377,7 @@
                                     <span class="control__indicator"></span>
                                 </label>
                                 <a href="#" class="forget_password">
-                                    Forgot Password ?
+                                    @UIResource.ForgotPassword
                                 </a>
                             </div>
 
@@ -590,7 +465,7 @@
                         <div class="col-sm-4 col-lg-4 col-xl-3 col-4">
                             <div class="media current-item">
                                 <div class="song-poster">
-                                    <img class="box-rounded-sm" src="js/mp3/browse/browse-overview-4.jpg" alt="">
+                                    <img class="box-rounded-sm" src="~/js/mp3/browse/browse-overview-4.jpg" alt="">
                                 </div>
                                 <div class="des">
                                     <div class="jp-title" aria-label="title">&nbsp;</div>
@@ -601,11 +476,10 @@
                                         <i class="flaticon-menu"></i>
                                     </div>
                                     <ul class="tranding_more_option">
-                                        <li><a href="#"><span class="opt_icon"><i class="flaticon-playlist"></i></span>Add To playlist</a></li>
-                                        <li><a href="#"><span class="opt_icon"><i class="flaticon-star"></i></span>favourite</a></li>
-                                        <li><a href="#"><span class="opt_icon"><i class="flaticon-share"></i></span>share</a></li>
-                                        <li><a href="#"><span class="opt_icon"><i class="flaticon-files-and-folders"></i></span>view lyrics</a></li>
-                                        <li><a href="#"><span class="opt_icon"><i class="flaticon-trash"></i></span>delete</a></li>
+                                        <li><a href="#"><span class="opt_icon"><i class="flaticon-playlist"></i></span>@UIResource.AddToPlaylist</a></li>
+                                        <li><a href="#"><span class="opt_icon"><i class="flaticon-star"></i></span>@UIResource.Favourite</a></li>
+                                        <li><a href="#"><span class="opt_icon"><i class="flaticon-share"></i></span>@UIResource.Share</a></li>
+                                        <li><a href="#"><span class="opt_icon"><i class="flaticon-trash"></i></span>@UIResource.Delete</a></li>
                                     </ul>
 
                                 </div>
@@ -668,7 +542,7 @@
                     </div>
                     <div class="media current-item">
                         <div class="song-poster">
-                            <img class="box-rounded-sm" src="js/mp3/browse/playlist-2.jpg" alt="">
+                            <img class="box-rounded-sm" src="~/js/mp3/browse/playlist-2.jpg" alt="">
                         </div>
                         <div class="player-details col-8">
                             <h3 class="jp-title">What Makes You Country</h3>
@@ -685,11 +559,10 @@
                                         <i class="fas fa-ellipsis-h"></i>
                                     </div>
                                     <ul class="tranding_more_option">
-                                        <li><a href="#"><span class="opt_icon"><i class="flaticon-playlist"></i></span>Add To playlist</a></li>
-                                        <li><a href="#"><span class="opt_icon"><i class="flaticon-star"></i></span>favourite</a></li>
-                                        <li><a href="#"><span class="opt_icon"><i class="flaticon-share"></i></span>share</a></li>
-
-                                        <li><a href="#"><span class="opt_icon"><i class="flaticon-trash"></i></span>delete</a></li>
+                                        <li><a href="#"><span class="opt_icon"><i class="flaticon-playlist"></i></span>@UIResource.AddToPlaylist</a></li>
+                                        <li><a href="#"><span class="opt_icon"><i class="flaticon-star"></i></span>@UIResource.Favourite</a></li>
+                                        <li><a href="#"><span class="opt_icon"><i class="flaticon-share"></i></span>@UIResource.Share</a></li>
+                                        <li><a href="#"><span class="opt_icon"><i class="flaticon-trash"></i></span>@UIResource.Delete</a></li>
                                     </ul>
                                 </div>
                             </div>
