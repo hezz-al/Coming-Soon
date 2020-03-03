@@ -135,6 +135,9 @@
   <data name="Favourite" xml:space="preserve">
     <value>Seçilənlər</value>
   </data>
+  <data name="FeaturedArtists" xml:space="preserve">
+    <value>Dinlənilən müğənnilər</value>
+  </data>
   <data name="ForgotPassword" xml:space="preserve">
     <value>Şifrəni unutmusan</value>
   </data>
@@ -150,8 +153,14 @@
   <data name="New" xml:space="preserve">
     <value>Yeni</value>
   </data>
+  <data name="NewReleasesAlbums" xml:space="preserve">
+    <value>Yeni paylaşılan janrlar</value>
+  </data>
   <data name="Notifications" xml:space="preserve">
     <value>Bildirişlər</value>
+  </data>
+  <data name="ReadMore" xml:space="preserve">
+    <value>Ətraflı</value>
   </data>
   <data name="Register" xml:space="preserve">
     <value>Qeydiyyat</value>
@@ -170,6 +179,12 @@
   </data>
   <data name="Subscribe" xml:space="preserve">
     <value>Abunə ol</value>
+  </data>
+  <data name="TopSongs" xml:space="preserve">
+    <value>Top dinlənilən musiqilər</value>
+  </data>
+  <data name="TreandingSongs" xml:space="preserve">
+    <value>Top sevilən musiqilər</value>
   </data>
   <data name="UsefullLinks" xml:space="preserve">
     <value>Faydalı linklər</value>

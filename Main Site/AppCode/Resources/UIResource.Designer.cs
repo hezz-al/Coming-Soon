@@ -115,6 +115,15 @@ namespace MainSite.AppCode.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dinlənilən müğənnilər.
+        /// </summary>
+        public static string FeaturedArtists {
+            get {
+                return ResourceManager.GetString("FeaturedArtists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Şifrəni unutmusan.
         /// </summary>
         public static string ForgotPassword {
@@ -160,11 +169,29 @@ namespace MainSite.AppCode.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Yeni paylaşılan janrlar.
+        /// </summary>
+        public static string NewReleasesAlbums {
+            get {
+                return ResourceManager.GetString("NewReleasesAlbums", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bildirişlər.
         /// </summary>
         public static string Notifications {
             get {
                 return ResourceManager.GetString("Notifications", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ətraflı.
+        /// </summary>
+        public static string ReadMore {
+            get {
+                return ResourceManager.GetString("ReadMore", resourceCulture);
             }
         }
         
@@ -219,6 +246,24 @@ namespace MainSite.AppCode.Resources {
         public static string Subscribe {
             get {
                 return ResourceManager.GetString("Subscribe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Top dinlənilən musiqilər.
+        /// </summary>
+        public static string TopSongs {
+            get {
+                return ResourceManager.GetString("TopSongs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Top sevilən musiqilər.
+        /// </summary>
+        public static string TreandingSongs {
+            get {
+                return ResourceManager.GetString("TreandingSongs", resourceCulture);
             }
         }
         
