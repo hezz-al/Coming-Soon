@@ -61,6 +61,15 @@ namespace MainSite.AppCode.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Haqqımızda.
+        /// </summary>
+        public static string AboutUs {
+            get {
+                return ResourceManager.GetString("AboutUs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Playlistə əlavə et.
         /// </summary>
         public static string AddToPlaylist {
@@ -79,6 +88,15 @@ namespace MainSite.AppCode.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Əlaqə.
+        /// </summary>
+        public static string Contact {
+            get {
+                return ResourceManager.GetString("Contact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sil.
         /// </summary>
         public static string Delete {
@@ -88,7 +106,7 @@ namespace MainSite.AppCode.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Seçilən.
+        ///   Looks up a localized string similar to Seçilənlər.
         /// </summary>
         public static string Favourite {
             get {
@@ -115,6 +133,15 @@ namespace MainSite.AppCode.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tarixçə.
+        /// </summary>
+        public static string History {
+            get {
+                return ResourceManager.GetString("History", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Daxil ol.
         /// </summary>
         public static string Login {
@@ -124,11 +151,47 @@ namespace MainSite.AppCode.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Yeni.
+        /// </summary>
+        public static string New {
+            get {
+                return ResourceManager.GetString("New", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bildirişlər.
+        /// </summary>
+        public static string Notifications {
+            get {
+                return ResourceManager.GetString("Notifications", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Qeydiyyat.
+        /// </summary>
+        public static string Register {
+            get {
+                return ResourceManager.GetString("Register", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Problemi bildir.
         /// </summary>
         public static string ReportAnIssue {
             get {
                 return ResourceManager.GetString("ReportAnIssue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hamısına bax.
+        /// </summary>
+        public static string SeeAll {
+            get {
+                return ResourceManager.GetString("SeeAll", resourceCulture);
             }
         }
         
@@ -165,6 +228,15 @@ namespace MainSite.AppCode.Resources {
         public static string UsefullLinks {
             get {
                 return ResourceManager.GetString("UsefullLinks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Musiqi dünyan.
+        /// </summary>
+        public static string YourMusic {
+            get {
+                return ResourceManager.GetString("YourMusic", resourceCulture);
             }
         }
     }

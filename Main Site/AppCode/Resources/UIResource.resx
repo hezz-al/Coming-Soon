@@ -117,17 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AboutUs" xml:space="preserve">
+    <value>Haqqımızda</value>
+  </data>
   <data name="AddToPlaylist" xml:space="preserve">
     <value>Playlistə əlavə et</value>
   </data>
   <data name="Advertise" xml:space="preserve">
     <value>Reklam ver</value>
   </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Əlaqə</value>
+  </data>
   <data name="Delete" xml:space="preserve">
     <value>Sil</value>
   </data>
   <data name="Favourite" xml:space="preserve">
-    <value>Seçilən</value>
+    <value>Seçilənlər</value>
   </data>
   <data name="ForgotPassword" xml:space="preserve">
     <value>Şifrəni unutmusan</value>
@@ -135,11 +141,26 @@
   <data name="Genres" xml:space="preserve">
     <value>Janrlar</value>
   </data>
+  <data name="History" xml:space="preserve">
+    <value>Tarixçə</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Daxil ol</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Yeni</value>
+  </data>
+  <data name="Notifications" xml:space="preserve">
+    <value>Bildirişlər</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Qeydiyyat</value>
+  </data>
   <data name="ReportAnIssue" xml:space="preserve">
     <value>Problemi bildir</value>
+  </data>
+  <data name="SeeAll" xml:space="preserve">
+    <value>Hamısına bax</value>
   </data>
   <data name="Share" xml:space="preserve">
     <value>Paylaş</value>
@@ -152,5 +173,8 @@
   </data>
   <data name="UsefullLinks" xml:space="preserve">
     <value>Faydalı linklər</value>
+  </data>
+  <data name="YourMusic" xml:space="preserve">
+    <value>Musiqi dünyan</value>
   </data>
 </root>
