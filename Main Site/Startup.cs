@@ -41,6 +41,7 @@ namespace Main_Site
         private void RepositoryDIImplementation(IServiceCollection services)
         {
             services.AddScoped<IRepository<Setting>, SettingRepository>();
+            services.AddScoped<IRepository<Advertisement>, AdvertisementRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

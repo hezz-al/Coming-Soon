@@ -32,6 +32,17 @@ namespace MainSite.Models.DataContext
                 });
                 db.SaveChanges();
             }
+            if (!db.Advertisements.Any())
+            {
+                db.Advertisements.Add(new Advertisement
+                {
+                    Title = "First ads",
+                    Image = "/images/add2.png",
+                    Link = "http://hezz.al",
+                    Status = true
+                });
+                db.SaveChanges();
+            }
         }
     }
 }

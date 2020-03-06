@@ -11,6 +11,7 @@ namespace MainSite.Models.DataContext
 
 		}
 		public DbSet <Setting> Settings { get; set; }
+		public DbSet <Advertisement> Advertisements { get; set; }
 
 	}
 }
